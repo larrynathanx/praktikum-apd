@@ -1,0 +1,2 @@
+saya = "Larry"
+print(saya)
