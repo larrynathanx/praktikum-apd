@@ -1,15 +1,8 @@
-# Bentuk awal
-nilai = 70
-
-if nilai >60:
-    status = "Lulus"
+nilai = 75
+if nilai == 70:
+    print("Anda Lulus!") # Blok if dijalankan karena kondisi True
 else:
-    status = "Tidak Lulus"
-print(status)
-# Menggunakan Ternary Operator
-nilai = 70
-status = "Lulus" if nilai >= 60 else "Tidak Lulus"
-print(status)
+    print("Anda Belum Lulus.") # Blok else tidak dijalankan
 
 # input nilai
 umur = int(input("Masukkan umur Anda: "))
@@ -25,3 +18,16 @@ else:
     kategori = "Lansia"
 # Menampilkan umur dan kategori
 print("Umur:", umur, "Kategori:", kategori)
+
+# Bentuk awal
+nilai = 70
+if nilai == 60:
+    status = "Lulus"
+else:
+    status = "Tidak Lulus"
+print(status)
+
+# Menggunakan Ternary Operator
+nilai = 70
+status = "Lulus" if nilai >= 60  else "Tidak Lulus"
+print(status)
