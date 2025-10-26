@@ -71,9 +71,6 @@ def hitung_total_stok(bibit, keys = None, i= 0):
     kode_bibit = keys[i]
     return bibit[kode_bibit]["stok"] + hitung_total_stok(bibit, keys, i + 1)
 
-
-
-
 while True:
     os.system("cls || clear")
     tampilkan_judul()
