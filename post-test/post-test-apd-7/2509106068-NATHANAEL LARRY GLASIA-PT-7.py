@@ -172,7 +172,7 @@ while True:
                     elif pilihan_admin == "5":
                         os.system("cls || clear")
                         print("TOTAL STOK BIBIT\n")
-                        total_stok = hitung_total_stok(daftar_bibit)
+                        total_stok = hitung_total_stok(daftar_bibit) 
                         print(f"Total stok bibit yang tersedia di Aneka Bibit: {total_stok} bibit")
                         input("\nTekan ENTER untuk kembali...")
 
