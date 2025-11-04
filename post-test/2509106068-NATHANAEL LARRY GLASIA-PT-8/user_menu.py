@@ -24,14 +24,16 @@ def beli_bibit(daftar_bibit):
         tabel.add_row([kode, data["nama"], data["jenis"], data["harga"], data["stok"]])
     print(tabel)
     kode_beli = input("\nMasukkan kode bibit yang mau dibeli: ")
-    if validasi_input(kode_beli, daftar_bibit):
-        jumlah = input_int("Jumlah beli: ")
-        if jumlah is not None and jumlah <= daftar_bibit[kode_beli]["stok"]:
-            total_beli = jumlah*daftar_bibit[kode_beli]["harga"]
-            daftar_bibit[kode_beli]["stok"] -= jumlah
-            print(f"\nBerhasil membeli {jumlah} bibit {daftar_bibit[kode_beli]['nama']}. Total pembelian: Rp{total_beli}.")
-        else:
-            print("Stok tidak mencukupi")
+    kode_beli = validasi_input(kode_beli, daftar_bibit)
+
+    jumlah = input_int("Jumlah beli: ")
+    if jumlah is not None and jumlah <= daftar_bibit[kode_beli]["stok"]:
+        total_beli = jumlah*daftar_bibit[kode_beli]["harga"]
+        daftar_bibit[kode_beli]["stok"] -= jumlah
+        print(f"\nBerhasil membeli {jumlah} bibit {daftar_bibit[kode_beli]['nama']}. Total pembelian: Rp{total_beli}.")
+        input("\nTekan ENTER untuk kembali...")
+    else:
+        print("Stok tidak mencukupi")
         input("\nTekan ENTER untuk kembali...")
 
 def menu_user(daftar_bibit):

@@ -11,4 +11,4 @@ def validasi_input(kode, daftar_bibit):
         input("\nTekan ENTER untuk mengulang...")
         kode_baru = input("Masukkan kode bibit yang valid: ")
         return validasi_input(kode_baru, daftar_bibit)
-    return True
+    return kode
