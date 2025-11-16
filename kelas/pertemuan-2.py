@@ -25,7 +25,7 @@ Bahasa Pemrograman python""")
 
 
 teks  = 'saya suka belajar apd'
-# print (teks[-1])
+print (teks[-1])
 print(teks[3:8])
 print(teks[3:])
 print(teks[:7])
