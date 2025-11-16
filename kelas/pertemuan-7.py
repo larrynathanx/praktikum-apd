@@ -10,6 +10,7 @@ def volume_persegi(sisi):
 
 print("Volume persegi: ", volume_persegi(8))
 
+#Variabel global
 Nama = "Hambali"
 Mata_Kuliah = "Algoritma dan Pemrograman Dasar"
 
